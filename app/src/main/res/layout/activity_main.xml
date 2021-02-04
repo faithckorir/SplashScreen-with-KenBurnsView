@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/splash"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:padding="24dp" >
+
+    <com.nhif.logintest.MaterialDesignIconsTextView
+        android:id="@+id/logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="64dp"
+        android:layout_marginTop="64dp"
+        android:text=""
+        android:textColor="@color/nhif_darkBlue"
+        android:textSize="64dp"
+        tools:ignore="SpUsage" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical" >
+
+        <com.nhif.logintest.MaterialDesignIconsTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+
+            android:drawableLeft="@drawable/ic_baseline_person_24"
+            android:textColor="@color/nhif_secondaryblue"
+            android:textSize="16dp"
+            tools:ignore="SpUsage" />
+
+        <com.nhif.logintest.FloatLabeledEditText
+            android:id="@+id/nationalId"
+            android:layout_width="0dp"
+
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_weight="1"
+
+
+            app:fletFloatingHint="@string/nationalid"
+
+            app:fletHintTextColor="@color/nhif_secondaryblue"
+            app:fletSingleLine="true"
+            app:fletTextColor="@color/nhif_secondaryblue" />
+    </LinearLayout>
+ <LinearLayout
+     android:layout_marginTop="17dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical" >
+
+        <com.nhif.logintest.MaterialDesignIconsTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+
+            android:drawableLeft="@drawable/ic_baseline_vpn_key_24"
+            android:textColor="@color/nhif_secondaryblue"
+            android:textSize="16dp"
+            tools:ignore="SpUsage" />
+
+        <com.nhif.logintest.FloatLabeledEditText
+
+            android:layout_width="0dp"
+
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_weight="1"
+
+
+            app:fletFloatingHint="@string/nationalid"
+
+            app:fletHintTextColor="@color/nhif_secondaryblue"
+            app:fletSingleLine="true"
+            app:fletTextColor="@color/nhif_secondaryblue" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="54dp" >
+
+        <com.nhif.logintest.MaterialRippleLayout
+            style="@style/RippleStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="3dp"
+             >
+
+            <com.nhif.logintest.RobotoTextView
+                android:id="@+id/login"
+                style="@style/ButtonStyle.RaisedEmpty"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="0dp"
+                android:background="@color/nhif_darkBlue"
+                android:minWidth="112dp"
+                android:text="@string/verifyidentity"
+                android:textColor="#fff" />
+        </com.nhif.logintest.MaterialRippleLayout>
+
+       <!-- <com.nhif.logintest.MaterialRippleLayout
+            style="@style/RippleStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="3dp"
+            app:rippleColor="@android:color/holo_green_dark" >
+
+            <com.nhif.logintest.RobotoTextView
+                android:id="@+id/register"
+                style="@style/ButtonStyle.RaisedEmpty"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="0dp"
+                android:background="@color/nhif_darkBlue"
+                android:minWidth="112dp"
+                android:text="@string/register"
+                android:textColor="#fff" />
+        </com.nhif.logintest.MaterialRippleLayout>-->
+    </LinearLayout>
+
+    <!--<com.nhif.logintest.MaterialRippleLayout
+        style="@style/RippleStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:layout_marginTop="54dp"
+         >
+
+        <com.nhif.logintest.RobotoTextView
+            android:id="@+id/skip"
+            style="@style/ButtonStyle.RaisedEmpty"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_margin="0dp"
+            android:background="@android:color/transparent"
+            android:minWidth="112dp"
+            android:text="@string/skip"
+            android:textColor="@color/nhif_darkBlue" />
+    </com.nhif.logintest.MaterialRippleLayout>-->
+
+</LinearLayout>
